@@ -1,0 +1,48 @@
+-DDL (Data Definition Language)
+	- CREATE (membuat)
+	- ALTER (merubah nama tabel dan database)(seluruh modifikasi data dalam database)
+	- DROP (menghapus tabel dan database)
+
+-DML (Data Manipulation Language)
+	-select
+	-insert
+	-update
+	-delete
+
+-DCL (Data Control Language)
+	-GRANT (memberi akses ke database)
+	-REVOKE (menghilangkan akses ke database)
+
+-TCL (Transaction Control Language)
+	-BEGIN (untuk memulai)
+	-COMMIT (jika transaksi berhasil dan barang akan berkurang)
+	-ROllback (jika transaksi gagal dan barang tidak akan berkurang)
+
+
+-DATABASE
+
+CREATE DATABASE = untuk database
+CREATE TABLE = untuk tabel
+SELECT * FROM nama_tabel = untuk ngecek tabel
+
+
+\q < untuk keluar dari sqp
+\L < untuk cek database
+\dt < cek tabel
+\! cls < untuk clear sql
+\d nama_tabel < untuk ngecek apakah colomnya sudah bertambah
+
+untuk import class maka variabelnya pakai {}
+
+Yang harms di install kalau mau pakai ORM :
+- npm init -y
+- npm install sequelize
+- sequelize init
+Atur file config
+- npm install pg
+- sequelize db:create
+Buat tabel
+- sequelize model:generate --name nama_tabel --attributes nama_colom:jenis string/integer, sama, diakhiri dengan approved:boolean
+Edit foreign key dlu
+-sequelize db:migrate
+

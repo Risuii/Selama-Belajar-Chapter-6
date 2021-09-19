@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <Title>
+      Article | Update
+    </Title>
+  </head>
+
+  <body>
+    <form method="POST" action="/articles/update/<%= article.id %>">
+      <label for="title">
+        Title
+      </label>
+      <br>
+      <input type="text" name="title" value="<%= article.title %>">
+      <br>
+
+      <label for="body">
+        Body
+      </label>
+      <br>
+      <input type="text" name="body" value="<%= article.body %>">
+      <br>
+
+      <button type="submit">
+        Submit
+      </button>
+    </form>
+  </body>
+</html>
